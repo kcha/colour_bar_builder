@@ -16,7 +16,7 @@ mypalettes <- c("Default", rownames(brewer.pal.info)[mypalettes])
 shinyUI(fluidPage(
 
   # Application title
-  titlePanel("Colour Bar Creator"),
+  titlePanel("Colour Bar Builder"),
   
   HTML("This Shiny app generates a custom colour bar. 
                 Right-click on the plot to save or copy the image, or download as PDF.
@@ -54,7 +54,7 @@ shinyUI(fluidPage(
   ),
 
   wellPanel(
-      HTML('Source code: <a href="https://github.com/kcha/colour_bar_creator" target="_blank">GitHub</a>')
+      HTML('Source code: <a href="https://github.com/kcha/colour_bar_builder" target="_blank">GitHub</a>')
   ),
   
   tags$style(type='text/css', "#savepdf { margin-top: 50px; margin-left: 1px; margin-bottom: 30px }")
