@@ -14,8 +14,8 @@ Demo: https://kcha.shinyapps.io/colour_bar_builder
 To start the app on your local machine, `RColorBrewer` and `shinyjs` needs to be
 installed first, if not already:
 ```r
-install.packages("shinyjs")
 install.packages("RColorBrewer")
+install.packages("shinyjs")
 ```
 
 Then to start the app:
