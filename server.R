@@ -31,6 +31,7 @@ shinyServer(function(input, output, session) {
     updateColourInput(session, "lo", value = mycols[1])
   })
 
+  # Plot -----------------------------------------------------------------------
   output$colourbarPlot <- renderPlot({
   
     color.bar(colorRampPalette(c(input$lo, input$mid, input$hi))(input$numColours),
@@ -40,6 +41,7 @@ shinyServer(function(input, output, session) {
 
   })
   
+  # Save PDF --------------------------------------------------------------------
   output$savepdf <- downloadHandler(
     filename = "colorbar.pdf",
     content = function(file) {
