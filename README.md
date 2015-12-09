@@ -1,4 +1,4 @@
-# Colour Bar Creator App
+# Colour Bar Builder App
 
 A Shiny app that generates custom colour bars. 
 
