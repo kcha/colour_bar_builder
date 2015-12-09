@@ -30,7 +30,7 @@ shinyUI(fluidPage(
            colourInput("hi", "Select high colour:", value = "blue"),
            colourInput("mid", "Select middle colour:", value = "white"),
            colourInput("lo", "Select low colour:", value = "red"),
-           selectInput("palette", HTML('<a href="http://colorbrewer2.org/" target="_blank">RColorBrewer</a> palettes'), 
+           selectInput("palette", HTML('<a href="http://www.cookbook-r.com/Graphs/Colors_%28ggplot2%29/figure/unnamed-chunk-14-1.png" target="_blank">RColorBrewer</a> palettes (sequential and diverging)'), 
                        choices = mypalettes)
     ),
     
