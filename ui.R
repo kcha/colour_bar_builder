@@ -39,7 +39,9 @@ shinyUI(fluidPage(
                        min = 1, max = 100, value = 100),
            numericInput("min", "Min y-axis:", value = -1, width = "70%"),
            numericInput("max", "Max y-axis:", value = 1, width = "70%"),
-           numericInput("nticks", "Number of ticks:", value = 11, width = "70%")
+           numericInput("nticks", "Number of ticks:", value = 5, width = "70%"),
+           radioButtons("orientation", "Orientation", c("Vertical", "Horizontal"), 
+                        selected = "Vertical", inline = TRUE)
            
     ),
     
@@ -49,7 +51,7 @@ shinyUI(fluidPage(
     ),
     
     column(3,
-           plotOutput("colourbarPlot", width = "150px")
+           plotOutput("colourbarPlot", height="auto", width="auto")
     )
   ),
 
