@@ -1,5 +1,5 @@
 # Source: http://www.colbyimaging.com/wiki/statistics/color-bars
-color.bar <- function(lut, min, max=-min, nticks=11, ticks=seq(min, max, len=nticks), title='', horiz=FALSE) {
+colour.bar <- function(lut, min, max=-min, nticks=11, ticks=seq(min, max, len=nticks), title='', horiz=FALSE) {
   scale = (length(lut))/(max-min)
   # dev.new(width=1.75, height=5)
   if (horiz==FALSE) {

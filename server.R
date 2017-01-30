@@ -6,7 +6,7 @@
 #
 
 library(shiny)
-source("R/color_bar.R")
+source("R/colour_bar.R")
 
 shinyServer(function(input, output, session) {
   
@@ -44,7 +44,7 @@ shinyServer(function(input, output, session) {
   # Plot -----------------------------------------------------------------------
   output$colourbarPlot <- renderPlot({
   
-    color.bar(colorRampPalette(c(input$lo, input$mid, input$hi))(input$numColours),
+    colour.bar(colorRampPalette(c(input$lo, input$mid, input$hi))(input$numColours),
               min = input$min, max=input$max,
               nticks = input$nticks,
               title = input$title, 
@@ -61,7 +61,7 @@ shinyServer(function(input, output, session) {
       } else {
         pdf(file, height=4, width=2)
       } 
-      color.bar(colorRampPalette(c(input$lo, input$mid, input$hi))(input$numColours),
+      colour.bar(colorRampPalette(c(input$lo, input$mid, input$hi))(input$numColours),
                 min = input$min, max=input$max,
                 nticks = input$nticks,
                 title = input$title,
