@@ -22,7 +22,8 @@ shinyServer(function(input, output, session) {
     }
     
     if (input$palette != "Default") {
-      mycols <- brewer.pal(3, input$palette)
+      mycols <- suppressWarnings(brewer.pal(15, input$palette))
+      mycols <- c(mycols[1], mycols[round(length(mycols)/2)], mycols[length(mycols)])
     } else {
       mycols <- c("red", "white", "blue")
     }
